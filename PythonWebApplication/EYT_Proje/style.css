@@ -1,0 +1,167 @@
+*{
+    padding: 300;
+    margin: 20;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    box-sizing: border-box;   
+}
+.navbar{
+box-sizing: border-box;
+
+}
+div.header{
+    background-color: aliceblue;
+    width: 100%;
+}
+#navbarSupportedContent{
+    text-align: center;
+}
+
+.header{
+width: 99%;
+height: auto;
+color: #000000;
+}
+.learncode{
+    width: 99%;
+    height: 500px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    padding-top: 70px;
+    background: rgba(216, 213, 63, 0.2)
+}
+#learncode{
+    font-size: 70px;
+    font-weight: 700;
+}
+
+#learn2{
+    color: #000000;
+    font-weight: 700;
+    font-size: 40px;
+}
+.row html{
+    width: 100%;
+    height: auto;
+}
+div.row.excercise{
+    width: 100%;
+    height: auto;
+}
+a{
+    cursor: pointer;
+    font-size: 23px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+.row.html{
+    width: 100%;
+    height: auto;
+    background-color: #D9EEE1;
+    padding-top: 6%;
+    display: flex;
+    flex-direction: row;
+}
+.content-left{
+    width: 50%;
+    height: auto;
+    /* float: left; */
+    text-align: center;
+}
+.content-right{
+    width: 42%;
+    height: 530px;
+    float: left;
+    /* padding: 3% 7% 2% 4%; small devices */
+}
+#content-text{
+    font-size: 100px;
+    font-weight: 700;
+    margin-top: -18px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#html-btn{
+    border-radius: 25px;
+    padding-left: 52px;
+    padding-right: 39px;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.html-example{
+    padding: 16px;
+    background-color: #38444d;
+    color: #ddd;
+    border-radius: 5px;
+}
+.html-code{
+    font-size: 15px;
+    height:300px;
+    background-color:black;
+}
+
+.c{
+    padding: 2% 3%;
+    height: auto;
+    text-align: center;
+    width: 49.99999%;
+    float: left;
+
+}
+
+.content{
+    padding: 36px 24px;
+    font-size: 30px;
+    font-weight: 500;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.codeeditor{
+    width: 100%;
+    height: auto;
+    background-color: #e2d2d2;
+    padding: 30px 3px 50px 3px;
+}
+
+.editorcontent{
+    max-width: 974px;
+    padding: 8px 16px;
+    /* margin-left: 269.600px; */
+    margin-right: 269.600px;
+}
+
+.excercise{
+    width: 100%;
+    padding-left: 20px;
+    background-color: rgb(184, 212, 240);
+    color: rgb(0, 0, 0);
+    padding-top: 64px;
+    padding-bottom: 64px;
+    text-align: center;
+    height: auto;
+}
+
+
+
+  @media screen and (max-width: 1200px) {
+    #codeeditorimg {
+      width: 70%;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    #codeimg {
+      width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    #codeimg {
+      width: 50%;
+    }
+    .content-right{
+        padding: 3% 7% 2% 4%;
+    }
+  }
+

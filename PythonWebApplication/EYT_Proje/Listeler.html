@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PythonEdu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images\py_logo.png" type="image/jpg" />
+    <style>
+      body {
+        margin: 0;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 20px;
+        box-sizing: border-box;
+        
+      }
+
+      .sidebar {
+        margin: 0;
+        padding: 0;
+        width: 15%;
+        height: 900px;
+        position:absolute;
+        overflow:auto;
+        float: left;
+      }
+      
+      .sidebar a {
+        display: block;
+        color: rgb(73, 73, 73);
+        padding: 16px;
+        text-decoration: none;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 20px;
+        font-weight: 10px;
+        text-align: center;
+      }
+       
+      .sidebar a.active {
+        color: rgb(0, 0, 0);
+      }
+      
+      .sidebar a:hover:not(.active) {
+      color: black;
+      background-color: #dddddd;
+      }
+      ul{
+          color: black;
+      }
+      ul li{
+      color: black;
+      text-align: left;
+      }
+      
+      div.content {
+        margin-left: 200px;
+        padding: 10px 20px;
+        height: 1000px;
+        background-color: rgb(255, 255, 255);
+        float: right;
+        width: 85%;
+        
+      }
+      .myDiv {
+        border: 1px outset rgb(0, 0, 0);
+        background-color: rgb(243, 243, 243);    
+        border-style: dashed;
+        font-style: italic;
+        text-align:left;
+        padding: 5px;
+        margin: 1px;
+  }
+      
+      
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;
+      width: 100%;
+      height: auto;
+    }
+    div.content {margin-left: 0;
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+      width: 100%;
+      height: auto;
+    }
+  }
+      </style>
+</head>
+<body>
+    
+      <!-- header section started -->
+      <div class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            
+       
+              <img src="images/py_logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+      
+              
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: center;">
+                
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                 
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Anasayfa.html" style="margin:10px;" >Anasayfa</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Giris.html" style="margin:10px;" >Eğitim</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="http://127.0.0.1:8000/" style="margin:10px;" target="_blank">Kodlama Editörü</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Egzersiz.html" style="margin:10px;">Egzersizler</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Quizz.html" style="margin:10px;">Deneme Testleri</a>
+                    </li>
+                  </ul>
+          </nav>
+            
+      </div> 
+  <!-- header section ended -->
+
+      
+      <div class="sidebar bg-body-tertiary" style="font-weight: 10px;">
+        
+        <a href="Giris.html">Giriş</a>
+        <a href="Syntax.html">Syntax</a>
+        <a href="Yorumlar.html">Yorumlar</a>
+        <a href="Degiskenler.html">Değişkenler</a>
+        <a href="VeriTipleri.html">Veri Tipleri</a>
+        <a href="Boolean.html">Boolean</a>
+        <a href="Operatorler.html">Operatörler</a>
+        <a href="Listeler.html" style="background-color: #dddddd;">Listeler</a>
+        <a href="Demetler.html">Demetler</a>
+        <a href="Kumeler.html">Kümeler</a>
+        <a href="Sozlukler.html">Sözlükler</a>
+        <a href="Kosulifadeleri.html">Koşul İfadeleri</a>
+        <a href="Donguler.html">Döngüler</a>
+        <a href="Fonksiyonlar.html">Fonksiyonlar</a>
+        <a href="Dosyaislemleri.html">Dosya İşlemleri</a>
+        <a href="Moduller.html">Modüller</a>
+        
+      </div>
+
+
+    <div class="content"style="height: 898px; overflow: scroll;">
+<h4>Listeler</h4>
+<p>Python koleksiyonlar (diziler) altında yer alan liste (list) veri tipimiz sıralanabilen , değiştirilebilen , indekslenebilen  ve çoğul elemana izin veren bir veri tipidir. Köşeli parantezlerle [ ] oluşturulur.</p>
+<div class="myDiv">
+  <p>liste = []</p>
+</div>
+<p>Köşeli parantezlere oluşturulan listeler, en başta elemanlarla birlikte de oluşturulabilirler.</p>
+<div class="myDiv">
+  <p>liste = ["Ankara","İstanbul","Kayseri"]</p>
+</div>
+<p>Aynı zamanda bir liste list() fonksiyonu ile de oluşturulabilir ve constructor yöntemiyle başlangıçta elemanları ayarlanabilir.</p>
+<div class="myDiv">
+  <pre>
+liste = list()
+
+liste = list(("Ankara","İstanbul","Kayseri"))    
+  </pre>
+</div>
+<p>Oluşturduğumuz liste değişkenlerinin tipini kontrol edelim.</p>
+<div class="myDiv">
+  <p>print(type(liste))</p>
+</div>
+
+<h4>Liste Elemanlarına Erişim</h4>
+<p>Python programlama dilinde elinizdeki bir listenin elemanlarına ulaşabilmek için indeksleri kullanmalısınız. Aşağıdaki örnekle indeksleri nasıl kullanacağınızı gösterelim.</p>
+<div class="myDiv">
+<pre>
+liste = ["Sal","Vapur","Feribot","Korvet","Fırkateyn"]
+    
+print(liste[0])    # Sal
+print(liste[1])    # Vapur
+print(liste[2])    # Feribot
+print(liste[3])    # Korvet
+print(liste[4])    # Fırkateyn
+</pre>
+</div>
+
+<h4>Negatif İndeksleme</h4>
+<p>Negatif indeks kullanarak bir listeyi tersten başlayarak ele alabilirsiniz. Örnek üzerinde görelim hemen.</p>
+<div class="myDiv">
+<pre>
+liste = ["Sal","Vapur","Feribot","Korvet","Fırkateyn"]
+
+print(liste[-1])    # Fırkateyn
+print(liste[-2])    # Korvet
+print(liste[-3])    # Feribot
+print(liste[-4])    # Vapur
+print(liste[-5])    # Sal
+</pre>
+</div>
+
+<h4>Bir Listeden Yeni Liste Oluşturma (İndeks)</h4>
+<p>Elimizde mevcut olan bir listeden indeks belirterek yeni bir liste oluşturabiliriz. Örneğin mevcut listenin 2.indeksinden 5.indeksine kadar ( 5 dahil değil ) olan elemanlarla yeni bir liste oluşturalım.</p>
+<div class="myDiv">
+<pre>
+liste = ["a","b","c","d","e","f","g"]
+
+yeniliste = liste[2:5]
+  
+print(yeniliste)    #["c","d","e"]
+</pre>
+</div>
+
+<h4>Bir Listeden Yeni Liste Oluşturma (Negatif İndeks)</h4>
+<p>Elimizdeki listeden yeni bir liste oluştururken negatif indeksleri de kullanabiliriz.</p>
+<div class="myDiv">
+<pre>
+liste = ["a","b","c","d","e","f","g"]
+
+yeniliste = liste[-3:-1]
+  
+print(yeniliste)    #["e","f"]
+</pre>
+</div>
+<h4>Liste Elemanlarını Sıralayarak Ekrana Yazdırma</h4>
+<p>Yeri geldiğinde liste elemanlarınızı ekrana sırasıyla yazdırmak, elemanlar üzerinde sırasıyla işlem yapmak isteyebilirsiniz. Bunun için for döngümüzü kullanacağız. </p>
+<div class="myDiv">
+<pre>
+liste = ["a","b","c","d"]
+
+for x in liste:
+   print(x)
+</pre>
+  </div>
+<p>Bu şekilde listenin tüm elemanları x değeri üzerinden otomatik olarak listelenecek ve dizi elemanı bittiğinde döngü duracaktır.</p>
+<h4>Liste Eleman Sayısını Öğrenme</h4>
+<div class="myDiv">
+  <pre>
+liste = ["a","b","c","d"]
+
+print(len(liste))    #4    
+  </pre>
+</div>
+
+<h4>Liste Elemanının Değerini Değiştirme</h4>
+<p>Listeler ile çalışırken listede mevcut olan bir elemanın değerini rahatlıkla değiştirebilirsiniz. Bunun için elemanın indeks değerini bilmeniz yeterlidir.</p>
+<div class="myDiv">
+  <pre>
+meyveler = ["kivi","çilek","muz","pırasa"]
+
+meyveler[3] = "armut"
+    
+print(meyveler)    # ["kivi","çilek","muz","armut"]
+  </pre>
+</div>
+
+<h4>Listeye Yeni Eleman Ekleme</h4>
+<p>Listeler ile çalışırken listenin sonuna rahatlıkla yeni bir eleman ekleyebilirsiniz. Bunun için append() fonksiyonunu kullanacağız.</p>
+
+<div class="myDiv">
+  <pre>
+meyveler = ["kivi","çilek"]
+
+meyveler.append("muz")
+    
+print(meyveler)    # ["kivi","çilek","muz"]  
+  </pre>
+</div>
+<p>Eğer listenin sonuna değilde belirlediğiniz indeks numarasına eleman eklemek istiyorsanız insert() fonksiyonunu kullanmalısınız.</p>
+<div class="myDiv">
+  <pre>
+meyveler = ["kivi","çilek"]
+
+meyveler.insert(1,"muz")
+    
+print(meyveler)    # ["kivi","muz","çilek"] 
+  </pre>
+</div>
+
+<h4> Listeden Bir Eleman Çıkarma</h4>
+<p>Listenizden bir eleman çıkarmak istiyorsanız bunun dört yöntemi vardır. İlki listenin en sonundaki elemanı listeden atmaktır ve bunun için pop() fonksiyonunu kullanmalısınız.</p>
+<div class="myDiv">
+  <pre>
+meyveler = ["kivi","çilek","muz","armut"]
+
+meyveler.pop()
+    
+print(meyveler)    # ["kivi","çilek","muz"]
+  </pre>
+</div>
+<p>İkinci yöntem çıkarmak istediğiniz elemanı belirterek remove() fonksiyonunu kullanmaktır.</p>
+<div class="myDiv">
+  <pre>
+meyveler = ["kivi","çilek","muz","armut"]
+
+meyveler.remove("çilek")
+    
+print(meyveler) # ["kivi","muz","armut"]
+  </pre>
+</div>
+<p>Üçüncü yöntem çıkarmak istediğiniz elemanın indeksini belirterek del terimini kullanmaktır.</p>
+<div class="myDiv">
+  <pre>
+meyveler = ["kivi","çilek","muz","armut"]
+
+del meyveler[0]
+    
+print(meyveler) # ["çilek","muz","armut"]
+  </pre>
+</div>
+<p>Son ve en sert yöntemde tüm listeyi temizlemektir. Listedeki tüm elemanları çıkarıp boş bir liste elde etmek için clear() fonksiyonunu kullanabilirsiniz.</p>
+<div class="myDiv">
+  <pre>
+meyveler = ["kivi","çilek","muz","armut"]
+
+meyveler.clear()
+    
+print(meyveler) # []
+  </pre>
+</div>
+<h4>Liste Kopyalamak ve Çoğaltmak</h4>
+<p>Elimizde olan bir listeyi kopyalayarak çoğaltmak istiyorsak copy() fonksiyonunu kullanabiliriz.</p>
+<div class="myDiv">
+  <pre>
+liste = ["a","b","c","d"]
+
+yeniliste = liste.copy()
+    
+print(yeniliste) # ["a","b","c","d"]
+  </pre>
+</div>
+<p>Liste kopyalama için kullanılan diğer bir yöntem de yeni bir liste oluşturulurken kopyalanacak listeyi belirtmektir.</p>
+<div class="myDiv">
+  <pre>
+liste = ["a","b","c","d"]
+
+yeniliste = list(liste)
+    
+print(yeniliste) # ["a","b","c","d"]
+  </pre>
+</div>
+
+<h4>İki Farklı Listeyi Birleştirmek</h4>
+<p>Birbirinden farklı veya aynı iki listeyi birleştirmek için + operatörünü kullanabiliriz.</p>
+<div class="myDiv">
+  <pre>
+liste1 = ["A","B","C"] liste2 = ["D","E"]
+
+liste3 = liste1 + liste2
+    
+print(liste3) # ["A","B","C","D","E"]
+  </pre>
+</div>
+<p>Şimdi ise sırf bu liste birleştirme işlemi için oluşturulmuş extend() fonksiyonunu kullanalım.</p>
+<div class="myDiv">
+  <pre>
+liste1 = ["A","B","C"] liste2 = ["D","E"]
+
+liste1.extend(liste2)
+    
+print(liste1) # ["A","B","C","D","E"]
+  </pre>
+</div>
+<p>Kolay yöntemleri öğrendikten sonra şimdi de biraz daha uzun yöntemini görelim.</p>
+<div class="myDiv">
+  <pre>
+liste1 = ["A","B","C"] liste2 = ["D","E"]
+
+for x in liste2: liste1.append(x)
+    
+print(liste1) # ["A","B","C","D","E"]
+  </pre>
+</div>
+
+<h4>Liste Elemanlarını Sıralamak</h4>
+<p>Liste elemanlarınızı küçükten büyüğe veya büyükten küçüğe sıralamak istediğiniz zaman sort() fonksiyonunu kullanabilirsiniz.</p>
+
+<div class="myDiv">
+  <pre>
+liste = [14,36,2,95,43,0,66]
+
+liste.sort()
+    
+print(liste) # [0, 2, 14, 36, 43, 66, 95]
+  </pre>
+</div>
+<p>Tam tersi yani büyükten küçüğe sıralamak için reverse=True terimini kullanmalısınız.</p>
+<div class="myDiv">
+  <pre>
+liste = [14,36,2,95,43,0,66]
+
+liste.sort(reverse=True)
+    
+print(liste) # [95, 66, 43, 36, 14, 2, 0]
+  </pre>
+</div>
+<h4>Bir Elemanın İndeksini Bulmak</h4>
+<p>Elimizdeki listeden bir elemanının listedeki indeksini bulmak için index() fonksiyonunu kullanabilirsiniz.</p>
+<div class="myDiv">
+  <pre>
+liste = [14,36,2,95,43,0,66]
+
+print(liste.index(95)) # 3
+  </pre>
+</div>
+<h4>Bir Elemanın Varlığını Kontrol Etme</h4>
+<p>Listede bir elemanın var olup olmadığını kontrol etmek için in terimini kullanabiliriz.</p>
+<div class="myDiv">
+  <pre>
+liste = ["A","B","C","D","E"]
+
+if "C" in liste: 
+  print("Evet var!") 
+else: 
+  print("Hayır yok!")
+        
+# Evet var!
+  </pre>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    
+
+
+
+
+
+      
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</html>

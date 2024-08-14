@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PythonEdu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images\py_logo.png" type="image/jpg" />
+    <style>
+      body {
+        margin: 0;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 20px;
+        box-sizing: border-box;
+        
+      }
+
+      .sidebar {
+        margin: 0;
+        padding: 0;
+        width: 15%;
+        height: 900px;
+        position:absolute;
+        overflow:auto;
+        float: left;
+      }
+      
+      .sidebar a {
+        display: block;
+        color: rgb(73, 73, 73);
+        padding: 16px;
+        text-decoration: none;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 20px;
+        font-weight: 10px;
+        text-align: center;
+      }
+       
+      .sidebar a.active {
+        color: rgb(0, 0, 0);
+      }
+      
+      .sidebar a:hover:not(.active) {
+      color: black;
+      background-color: #dddddd;
+      }
+      ul{
+          color: black;
+      }
+      ul li{
+      color: black;
+      text-align: left;
+      }
+      
+      div.content {
+        margin-left: 200px;
+        padding: 10px 20px;
+        height: 1000px;
+        background-color: rgb(255, 255, 255);
+        float: right;
+        width: 85%;
+        
+      }
+      .myDiv {
+        border: 1px outset rgb(0, 0, 0);
+        background-color: rgb(243, 243, 243);    
+        border-style: dashed;
+        font-style: italic;
+        text-align:left;
+        padding: 5px;
+        margin: 1px;
+  }
+      
+      
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;
+      width: 100%;
+      height: auto;
+    }
+    div.content {margin-left: 0;
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+      width: 100%;
+      height: auto;
+    }
+  }
+      </style>
+</head>
+<body>
+    
+      <!-- header section started -->
+      <div class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            
+       
+              <img src="images/py_logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+      
+              
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: center;">
+                
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                 
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Anasayfa.html" style="margin:10px;" >Anasayfa</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Giris.html" style="margin:10px;" >Eğitim</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="http://127.0.0.1:8000/" style="margin:10px;" target="_blank">Kodlama Editörü</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Egzersiz.html" style="margin:10px;">Egzersizler</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Quizz.html" style="margin:10px;">Deneme Testleri</a>
+                    </li>
+                  </ul>
+          </nav>
+            
+      </div> 
+  <!-- header section ended -->
+
+      
+      <div class="sidebar bg-body-tertiary" style="font-weight: 10px;">
+        
+        <a href="Giris.html">Giriş</a>
+        <a href="Syntax.html">Syntax</a>
+        <a href="Yorumlar.html">Yorumlar</a>
+        <a href="Degiskenler.html">Değişkenler</a>
+        <a href="VeriTipleri.html">Veri Tipleri</a>
+        <a href="Boolean.html">Boolean</a>
+        <a href="Operatorler.html">Operatörler</a>
+        <a href="Listeler.html">Listeler</a>
+        <a href="Demetler.html">Demetler</a>
+        <a href="Kumeler.html">Kümeler</a>
+        <a href="Sozlukler.html" style="background-color: #dddddd;">Sözlükler</a>
+        <a href="Kosulifadeleri.html">Koşul İfadeleri</a>
+        <a href="Donguler.html">Döngüler</a>
+        <a href="Fonksiyonlar.html">Fonksiyonlar</a>
+        <a href="Dosyaislemleri.html">Dosya İşlemleri</a>
+        <a href="Moduller.html">Modüller</a>
+        
+      </div>
+
+
+    <div class="content"style="height: 898px; overflow: scroll;">
+      <h4>Sözlükler</h4>
+      <p>Python koleksiyonlar (diziler) altında yer alan sözlük (dict) veri tipimiz değiştirilebilen , indekslenebilen, çoğul elemana izin veren ama sıralanamayan  bir veri tipidir. Süslü parantezlerle { } oluşturulur.</p>
+      
+      <div class="myDiv">
+        <pre>
+sozluk = {}     
+        </pre>       
+        </div>
+      
+<p>Süslü parantezlere oluşturulan sözlükler, en başta elemanlarla birlikte de oluşturulabilirler.</p>
+      
+        <div class="myDiv">
+          <pre>
+sozluk = {
+    "marka" : "BMW",
+    "model" : "i8",
+    "yil"   : 2019
+         }    
+          </pre>       
+          </div>
+      
+<p>Aynı zamanda bir sözlük dict() fonksiyonu ile de oluşturulabilir ve constructor yöntemiyle başlangıçta elemanları ayarlanabilir.</p>
+      
+        <div class="myDiv">
+          <pre>
+sozluk = dict()
+      
+sozluk = dict(sehir = "Ankara", plaka = 6)
+          </pre>       
+          </div>
+        
+<p>Daha gelişmiş bir kullanım olan fromkeys() fonksiyonu ile de demetleri kullanarak sözlük oluşturabilirsiniz ve tüm anahtar değerlere aynı anda bir değer atayabilirsiniz.</p>
+      
+          <div class="myDiv">
+            <pre>
+x = ('anahtar1', 'anahtar2', 'anahtar3') 
+y = 0
+              
+sozluk = dict.fromkeys(x, y)
+              
+print(sozluk) # {'anahtar2': 0, 'anahtar3': 0, 'anahtar1': 0}
+            </pre>       
+            </div>
+            
+<p>Oluşturduğumuz sozluk değişkenlerinin tipini kontrol edelim.</p>
+      <div class="myDiv">
+        <pre>
+print(type(sozluk)) 
+        </pre>       
+        </div>
+      
+      <h4>Sözlük Elemanlarına Erişim</h4>
+      <p>Python programlama dilinde elinizdeki bir sözlüğün elemanlarına ulaşabilmek için verinin key yani anahtar kısmını kullanabilirsiniz. Aşağıdaki örnekle anahtarları nasıl kullanacağınızı gösterelim.</p>
+      
+      <div class="myDiv">
+        <pre>
+sozluk = {
+      "marka" : "BMW",
+      "model" : "i8",
+      "yil"   : 2019
+               }
+            
+yil = sozluk["yil"]
+      
+print(yil) # 2019
+        </pre>       
+        </div>
+      
+      <p>Aynı erişim yöntemini get() fonksiyonla da kullanabilirsiniz.</p>
+      
+      <div class="myDiv">
+        <pre>
+sozluk = {
+      "marka" : "BMW",
+      "model" : "i8",
+      "yil"   : 2019
+            }
+      
+yil = sozluk.get("yil")
+      
+print(yil)         # 2019
+        </pre>       
+        </div>
+      
+      <h4>Sözlük Elemanlarını Sıralayarak Ekrana Yazdırma</h4>
+      <p>Yeri geldiğinde sözlük elemanlarınızı ekrana sırasıyla yazdırmak, elemanlar üzerinde sırasıyla işlem yapmak isteyebilirsiniz. Bunun için iki yöntemimiz var ve ilkiyle hemen başlayalım.</p>
+      
+      <div class="myDiv">
+        <pre>
+sozluk = {
+      "ulke" : "Türkiye",
+      "sehir" : "Ankara",
+      "ilce"   : "Yenimahalle"
+          }
+      
+      
+for x in sozluk:
+  print("Anahtar: " + x + " -- " + "Değer: " + sozluk[x])
+      
+# Anahtar: ulke -- Değer: Türkiye
+# Anahtar: sehir -- Değer: Ankara
+# Anahtar: ilce -- Değer: Yenimahalle
+        </pre>       
+        </div>
+        <p>Bu örnekte sözlükteki tüm anahtar kelimeleri x değeri üzerinden otomatik olarak listeledik ve bu anahtar kelimeye denk gelen değeri çektik. Şimdi ise aynı örneğimizdeki döngümüzü items() ve values() fonksiyonlarını kullanarak döndüreceğiz. İlk olarak items() fonksiyonu ile başlarsak anahtar ve değerlerin sırasıyla x ve y değişkenine atandığını görebiliriz.</p>
+      
+        <div class="myDiv">
+          <pre>
+sozluk = {
+      "ulke" : "Türkiye",
+      "sehir" : "Ankara",
+      "ilce"   : "Yenimahalle"
+              }
+      
+      
+for x,y in sozluk.items():
+   print("Anahtar: " + x + " -- " + "Değer: " + y)
+      
+# Anahtar: ulke -- Değer: Türkiye
+# Anahtar: sehir -- Değer: Ankara
+# Anahtar: ilce -- Değer: Yenimahalle
+          </pre>       
+          </div>
+      
+          <p>Sadece values() fonksiyonunu kullandığımızda ise döngümüzde yalnızca değerlerin döndüğünü görebiliriz.</p>
+      
+          <div class="myDiv">
+            <pre>
+sozluk = {
+         "ulke" : "Türkiye",
+         "sehir" : "Ankara",
+         "ilce"   : "Yenimahalle"
+          }
+       
+       
+for x in sozluk.values():
+     print(x)
+       
+# Türkiye
+# Ankara
+# Yenimahalle
+            </pre>       
+            </div>
+      
+            <h4>Sözlük Eleman Sayısını Öğrenme</h4>
+            <p>Elinizde olan bir sözlüğün eleman sayısını öğrenmek için len() fonksiyonunu kullanacağız.</p>
+      
+            <div class="myDiv">
+              <pre>
+sozluk = {
+         "marka" : "BMW",
+         "model" : "i8",
+         "yil"   : 2019
+          }
+         
+print(len(sozluk))    #3
+              </pre>       
+              </div>
+      
+              <h4>Bir Elemanın Varlığını Kontrol Etme</h4>
+              <p>Sözlükte bir anahtarın olup olmadığını kontrol etmek için in terimini kullanacağız. Eğer eleman varsa True , yoksa False değerini alırız.</p>
+      
+              <div class="myDiv">
+                <pre>
+sozluk = {
+      "marka" : "BMW",
+      "model" : "i8",
+      "yil"   : 2019
+          }
+           
+print("model" in sozluk)    # True
+print("i8" in sozluk)    # False
+                </pre>       
+                </div>
+      
+                <h4>Sözlükten Bir Eleman Çıkarmak</h4>
+                <p>Sözlükten anahtar kelimeyi belirterek bir eleman çıkarmak için pop() fonksiyonunu kullanabiliriz.</p>
+      
+                <div class="myDiv">
+                  <pre>
+sozluk = {
+    "marka" : "BMW",
+    "model" : "i8",
+    "yil"   : 2019
+                      }
+             
+sozluk.pop("yil")
+             
+print(sozluk)       # {'marka': 'BMW', 'model': 'i8'}
+                  </pre>       
+                  </div>
+                  <p>Sözlük veri tipinde elemanlar sıralanamadığı için sözlükten rastgele bir eleman çıkarmak için popitem() fonksiyonunu kullanabiliriz.</p>
+      
+      <div class="myDiv">
+      <pre>
+sozluk = {
+    "marka" : "BMW",
+    "model" : "i8",
+    "yil"   : 2019
+          }
+      
+sozluk.popitem()
+      
+print(sozluk)       # {'model': 'i8', 'yil': 2019}              
+      </pre>       
+      </div>
+      <p>Eğer tek tek eleman çıkarmakla uğraşmayıp tüm elemanları sözlükten çıkarmak, sözlüğü temizlemek istiyorsanız clear() fonksiyonunu kullanabiliriz.</p>
+      
+      <h4>Sözlüğü Tamamen Silmek</h4>
+      <p>Sözlükten elemanları çıkarmak veya sözlüğü temizlemek yerine isterseniz sözlüğü tamamen silebilirsiniz. Bunun için del terimini kullanabilirsiniz. Fakat sözlüğü sildikten sonra kullanmaya çalışırsanız hata alacaksınızdır.</p>
+      
+      <div class="myDiv">
+        <pre>
+sozluk = {
+     "marka" : "BMW",
+     "model" : "i8",
+     "yil"   : 2019
+            }
+      
+del sozluk
+      
+print(sozluk)        # !!! HATA VERİR !!!          
+        </pre>       
+        </div>
+      
+<h4>Sözlük  Kopyalamak ve Çoğaltmak</h4>
+<p>Elimizde olan bir sözlüğü kopyalayarak çoğaltmak için copy() fonksiyonunu kullanabilirsiniz.</p>
+      
+      <div class="myDiv">
+        <pre>
+sozluk = {
+    "sehir" : "Ankara",
+    "plaka" : 6
+            }
+      
+yenisozluk = sozluk.copy()
+      
+print(yenisozluk)     # {'sehir': 'Ankara', 'plaka': 6}        
+        </pre>       
+        </div>
+        <br>
+      
+        <div class="myDiv">
+          <pre>
+sozluk = {
+     "sehir" : "Ankara",
+     "plaka" : 6
+              }
+      
+yenisozluk = dict(sozluk)
+      
+print(yenisozluk)     # {'sehir': 'Ankara', 'plaka': 6}
+          </pre>       
+          </div>
+      
+      <h4>İç İçe Sözlük Oluşturma</h4>
+      <p>Dersimizin başında nasıl sözlük oluşturabileceğimizi gördük. Şimdi ise sözlük içinde sözlük, yani iç içe sözlük kullanarak nasıl sözlük değişkeni oluşturabileceğimizi göstereceğiz.</p>
+      
+      <div class="myDiv">
+        <pre>
+sozluk = {
+     "sehir1" : {
+                 "sehir" : "Ankara",
+                 "plaka" : 6
+                 },
+     "sehir2" : {
+                  "sehir" : "İstanbul",
+                  "plaka" : 34
+                 },
+     "sehir3" : {
+                  "sehir" : "Kayseri",
+                  "plaka" : 38
+                 },
+           }
+        </pre>       
+        </div>
+      <p>Eğer bu kullanım biraz karışık gelmişse tüm sözlükleri ayrı ayrı oluşturup en son birleştirebilirsiniz.</p>
+      
+      <div class="myDiv">
+        <pre>
+          sehir1 = {
+            "sehir" : "Ankara",
+            "plaka" : 6
+          }
+      
+sehir2 = {
+       "sehir" : "İstanbul",
+       "plaka" : 34
+          }
+      
+sehir3 = {
+       "sehir" : "Kayseri",
+       "plaka" : 38
+          }
+sozluk = {
+        "sehir1" : sehir1,
+        "sehir2" : sehir2,
+        "sehir3" : sehir3
+          }
+        </pre>       
+        </div>
+            
+
+
+
+    </div>
+
+    
+
+
+
+
+
+      
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</html>

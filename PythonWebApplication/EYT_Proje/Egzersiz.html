@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PythonEdu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images\py_logo.png" type="image/jpg" />
+    <style type="text/css">
+
+		body{
+			margin: 0;
+			padding: 0;
+		}
+  pre{
+font-size: 25px;
+  }
+    h4
+    {
+       position: absolute;
+       left: 20px;
+       top: 30px;
+       font-size: 25px;
+    }
+		section{
+			position: relative;
+			height: 100vh;
+			width: 100%;
+      height: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			z-index: 120;
+      
+		}
+		section .inputBx{
+			position: absolute;
+			height: 300px;
+			display: flex;;
+			justify-content: center;
+			align-items: center;
+			width: 1200px;
+			padding-right: 20px;
+			padding-left: 20px;
+			z-index: 5;
+			backdrop-filter: blur(10px);
+			border: 2px solid rgb(0, 0, 0);
+      background-color: rgb(243, 241, 241);
+      
+		}
+		.inputBx h1{
+			position: absolute;
+			font-family: sans-serif;
+			text-transform: uppercase;
+			line-height: auto;
+			color: rgb(0, 0, 0);
+      justify-content: center;
+      text-align: center;
+
+		}
+		.inputBx h1.active{
+			animation: animate linear forwards;
+		}
+		
+		.inputBx button:active{
+			transform: scale(0.95);
+		}
+		.inputBx button{
+			transition: 0.1s;
+			position: absolute;
+			bottom: 20px;
+			left: 20px;
+			padding: 10px 20px;
+			background: rgb(0, 0, 0);
+			color: rgb(255, 255, 255);
+			font-family: sans-serif;
+			font-weight: 500;
+			border: none;
+			outline: none;
+			cursor: pointer;
+		}
+		
+
+	</style>
+
+    <style>
+
+        body {
+          margin: 0;
+          font-family:'Times New Roman', Times, serif;
+          font-size: 20px;
+        }
+        
+        .sidebar {
+          margin: 0;
+          padding: 0;
+          width: 15%;
+          position:absolute;
+          height: auto;
+          overflow:hidden;
+          float: left;
+        }
+        
+        .sidebar a {
+          display: block;
+          color: rgb(73, 73, 73);
+          padding: 20px;
+          text-decoration: none;
+          font-family:'Times New Roman', Times, serif;
+          font-size: 20px;
+          font-weight: 10px;
+          text-align: center;
+          padding: 21.5px;
+        }
+         
+        .sidebar a.active {
+          color: rgb(0, 0, 0);
+        }
+        
+        .sidebar a:hover:not(.active) {
+          
+          color: black;
+          background-color: #dddddd;
+         
+        }
+        ul{
+            color: black;
+        }
+        ul li{
+        color: black;
+        text-align: left;
+        }
+        
+        div.content {
+          margin-left: 200px;
+          padding: 10px 20px;
+          height: 875px;
+          background-color: rgb(255, 248, 248);
+          float: right;
+          width: 85%;
+          
+        }
+        
+        .myDiv {
+              border: 0px outset rgb(255, 255, 255);
+              background-color: rgb(229, 235, 236);    
+              text-align: center;
+        }
+          
+        
+        @media screen and (max-width: 700px) {
+          .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative;
+          }
+          .sidebar a {float: left;
+            width: 100%;
+            height: auto;
+          }
+          div.content {margin-left: 0;
+            width: 100%;
+            height: auto;
+          }
+        }
+        
+        @media screen and (max-width: 400px) {
+          .sidebar a {
+            text-align: center;
+            float: none;
+            width: 100%;
+            height: auto;
+          }
+        }
+        </style>
+
+</head>
+<body>
+    
+      <!-- header section started -->
+      <div class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            
+       
+              <img src="images/py_logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+      
+              
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: center;">
+                
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                 
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Anasayfa.html" style="margin:10px;" >Anasayfa</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Giris.html" style="margin:10px;" >Eğitim</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="http://127.0.0.1:8000/" style="margin:10px;" target="_blank" >Kodlama Editörü</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Egzersiz.html" style="margin:10px;">Egzersizler</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Quizz.html" style="margin:10px;">Deneme Testleri</a>
+                    </li>
+                  </ul>
+          </nav>
+            
+      </div> 
+  <!-- header section ended -->
+      
+      <div class="sidebar bg-body-tertiary" style="font-weight: 10px;">
+        
+        
+
+        <a href="" class="nav-link disabled" style="color: rgb(117, 115, 115);">Basit Düzey</a>
+        <a href="b1egzersiz.html">Egzersiz1</a>
+        <a href="b2egzersiz.html">Egzersiz2</a>
+        <a href="b3egzersiz.html">Egzersiz3</a>
+        <a href="" class="nav-link disabled" style="color: rgb(117, 115, 115);">Orta Düzey</a>
+        <a href="o1egzersiz.html">Egzersiz1</a>
+        <a href="o2egzersiz.html">Egzersiz2</a>
+        <a href="o3egzersiz.html">Egzersiz3</a>
+        <a href="" class="nav-link disabled" style="color: rgb(117, 115, 115);">Zor Düzey</a>
+        <a href="z1egzersiz">Egzersiz1</a>
+        <a href="z2egzersiz">Egzersiz2</a>
+        <a href="z3egzersiz">Egzersiz3</a>
+        
+        
+      </div>
+
+
+      
+
+   
+</body>
+<script type="text/javascript">
+
+	var close = document.querySelector('.close');
+	var heading = document.querySelector('h1');
+	var dot = document.querySelector('.dot');
+
+	// this is for trigger enter btn
+	var input = document.getElementById("myInput");
+	input.addEventListener("keyup", function(event) {
+  	if (event.keyCode === 13) {
+   	event.preventDefault();
+   	document.getElementById("myBtn").click();
+  		}
+	});
+	
+		var answer = "bool";
+		var answerTwo = "BOOL";
+		
+	function fill(){
+		var blank = document.querySelector('.input').value;
+
+		if (blank == answer || blank == answerTwo) {
+			alert('Doğru Cevap');
+			video.style.visibility = "visible";
+			heading.style.color = "lime";
+			dot.style.boxShadow = '0 0 10px lime';
+			dot.style.background = 'lime';
+			close.style.visibility = 'visible';
+
+		}
+		else{
+			alert('Yanlış Cevap');
+			heading.style.color = "red";
+			dot.style.boxShadow = '0px 0px 10px red';
+			dot.style.background = 'red';
+			heading.classList.toggle('active');
+			heading.style.animationDuration = 0.2 + 's';
+			close.style.visibility = 'visible';
+
+		}
+	}
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</html>

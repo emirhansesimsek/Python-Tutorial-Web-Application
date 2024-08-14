@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PythonEdu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images\py_logo.png" type="image/jpg" />
+    <style>
+        body {
+          margin: 0;
+          font-family:'Times New Roman', Times, serif;
+          font-size: 20px;
+          position: absolute;
+        }
+
+        .sidebar {
+          margin: 0;
+          padding: 0;
+          width: 15%;
+          height: 980px;
+          position:absolute;
+          overflow:auto;
+          float: left;
+        }
+        
+        .sidebar a {
+          display: block;
+          color: rgb(73, 73, 73);
+          padding: 15.5px;
+          text-decoration: none;
+          font-family:'Times New Roman', Times, serif;
+          font-size: 20px;
+          font-weight: 10px;
+          text-align: center;
+        }
+         
+        .sidebar a.active {
+          color: rgb(0, 0, 0);
+        }
+        
+        .sidebar a:hover:not(.active) {
+        color: black;
+        background-color: #dddddd;
+        }
+        ul{
+            color: black;
+        }
+        ul li{
+        color: black;
+        text-align: left;
+        }
+        
+        div.content {
+          margin-left: 200px;
+          padding: 10px 20px;
+          height: 1000px;
+          background-color: rgb(255, 255, 255);
+          float: right;
+          width: 85%;
+          
+        }
+        .myDiv {
+          border: 1px outset rgb(0, 0, 0);
+          background-color: rgb(243, 243, 243);    
+          border-style: dashed;
+          font-style: italic;
+          text-align:left;
+          padding: 5px;
+          margin: 1px;
+    }
+        
+    @media screen and (max-width: 700px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .sidebar a {float: left;
+        width: 100%;
+        height: auto;
+      }
+      div.content {margin-left: 0;
+        width: 100%;
+        height: auto;
+      }
+    }
+    
+    @media screen and (max-width: 400px) {
+      .sidebar a {
+        text-align: center;
+        float: none;
+        width: 100%;
+        height: auto;
+      }
+    }
+        </style>
+</head>
+<body>
+    
+      <!-- header section started -->
+      <div class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            
+       
+              <img src="images/py_logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+      
+              
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: center;">
+                
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                 
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Anasayfa.html" style="margin:10px;" >Anasayfa</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Giris.html" style="margin:10px;" >Eğitim</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="http://127.0.0.1:8000/" style="margin:10px;" target="_blank">Kodlama Editörü</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Egzersiz.html" style="margin:10px;">Egzersizler</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Quizz.html" style="margin:10px;">Deneme Testleri</a>
+                    </li>
+                  </ul>
+          </nav>
+            
+      </div> 
+  <!-- header section ended -->
+
+      
+      <div class="sidebar bg-body-tertiary" style="font-weight: 10px;">
+        
+        <a href="Giris.html" style="background-color: #dddddd;">Giriş</a>
+        <a href="Syntax.html">Syntax</a>
+        <a href="Yorumlar.html">Yorumlar</a>
+        <a href="Degiskenler.html">Değişkenler</a>
+        <a href="VeriTipleri.html">Veri Tipleri</a>
+        <a href="Boolean.html">Boolean</a>
+        <a href="Operatorler.html">Operatörler</a>
+        <a href="Listeler.html">Listeler</a>
+        <a href="Demetler.html">Demetler</a>
+        <a href="Kumeler.html">Kümeler</a>
+        <a href="Sozlukler.html">Sözlükler</a>
+        <a href="Kosulifadeleri.html">Koşul İfadeleri</a>
+        <a href="Donguler.html">Döngüler</a>
+        <a href="Fonksiyonlar.html">Fonksiyonlar</a>
+        <a href="Dosyaislemleri.html">Dosya İşlemleri</a>
+        <a href="Moduller.html">Modüller</a>
+        
+      </div>
+
+      <div class="content"style="height: 980px; overflow: scroll;">
+       
+        <h4>Python Nedir?</h4>
+        <p>Python, Guido van Rossum tarafından 1991 yılında yayınlanan oldukça popüler bir programlama dilidir. Teknik olarak bakıldığında Python, önce derlenen (compiled), ardından derlenmiş kodun üstünden yorumlanan (interpretered) bir dildir.</p>
+        
+        <h4> Python İle Neler Yapılabilir?</h4>  
+        <ul>
+         <li>Python ile sunucu tabanlı web uygulamaları geliştirebilirsiniz.</li>
+         <li>Python ile masaüstü programları geliştirebilirsiniz.</li>
+         <li>Python ile projelerinizde ki veritabanı işlemlerinizi rahatlıkla yapabilirsiniz.</li>
+         <li>Python ile büyük veri (big data) ve karışık matematiksel işlemler gibi veri analizi ve bilimsel faaliyetler üzerinde çalışabilirsiniz.</li> 
+         <li>Python ile Makine Öğrenimi, Yapay Zeka, Görüntü İşleme alanlarında uygulamalar yazabilir, bu alanlarda çalışabilirsiniz.</li>
+         <li>Python ile örümcek tarzı yazılımlar geliştirebilirsiniz.</li>
+         <li>Python ile ağ ve soket programcılığı üzerinde çalışmalar yapabilirsiniz.</li>
+        </ul>
+        
+        <h4>Neden Python Kullanmalıyım?</h4>  
+        <p>Gerek popülerliği, gerek kolaylığı ve gerekse modülerliği sayesinde Python'a hızlı bir giriş yapabilir, neredeyse tüm yazılım ihtiyaçlarınızı hızlıca karşılayabilirsiniz. Tabi bu ve bunun gibi nedenlerden bazılarını sıralarsak şöyle bir liste elde etmiş oluruz;</p>
+        <ul style="display: block;">
+            <li>Python birçok farklı platformda çalışabilir (Windows, Linux, Mac, Rasperry Pi vs)</li>
+            <li>Konuşma diline (İngilizce) çok yakındır ve syntax oldukça basittir. Kod yazarken rahat edebilirsiniz.</li>
+            <li>Kodunuzu yazabilmeniz için öncesinde birçok kütüphane, sınıf vs. gereklilere ihtiyaç duymaz. Aklınızdaki algoritmayı sadece birkaç satır komutla bile hayata geçirebilirsiniz.</li>
+            <li>Nesne tabanlı programla desteği vardır ve büyük projelerde profesyonelce kullanabilirsiniz.</li> 
+            <li>İnternet ve yazılı kaynaklarda çok fazla dökümanı mevcuttur ve ihtiyaç duyduğunuzda yardım edecek birilerini rahatlıkla bulabilirsiniz.</li>
+        </ul>
+        <h4>Python Nedir?</h4>
+        <p>Python, Guido van Rossum tarafından 1991 yılında yayınlanan oldukça popüler bir programlama dilidir. Teknik olarak bakıldığında Python, önce derlenen (compiled), ardından derlenmiş kodun üstünden yorumlanan (interpretered) bir dildir.</p>
+        
+        <h4> Python İle Neler Yapılabilir?</h4>  
+        <ul>
+         <li>Python ile sunucu tabanlı web uygulamaları geliştirebilirsiniz.</li>
+         <li>Python ile masaüstü programları geliştirebilirsiniz.</li>
+         <li>Python ile projelerinizde ki veritabanı işlemlerinizi rahatlıkla yapabilirsiniz.</li>
+         <li>Python ile büyük veri (big data) ve karışık matematiksel işlemler gibi veri analizi ve bilimsel faaliyetler üzerinde çalışabilirsiniz.</li> 
+         <li>Python ile Makine Öğrenimi, Yapay Zeka, Görüntü İşleme alanlarında uygulamalar yazabilir, bu alanlarda çalışabilirsiniz.</li>
+         <li>Python ile örümcek tarzı yazılımlar geliştirebilirsiniz.</li>
+         <li>Python ile ağ ve soket programcılığı üzerinde çalışmalar yapabilirsiniz.</li>
+        </ul>
+        
+        <h4>Neden Python Kullanmalıyım?</h4>  
+        <p>Gerek popülerliği, gerek kolaylığı ve gerekse modülerliği sayesinde Python'a hızlı bir giriş yapabilir, neredeyse tüm yazılım ihtiyaçlarınızı hızlıca karşılayabilirsiniz. Tabi bu ve bunun gibi nedenlerden bazılarını sıralarsak şöyle bir liste elde etmiş oluruz;</p>
+        <ul style="display: block;">
+            <li>Python birçok farklı platformda çalışabilir (Windows, Linux, Mac, Rasperry Pi vs)</li>
+            <li>Konuşma diline (İngilizce) çok yakındır ve syntax oldukça basittir. Kod yazarken rahat edebilirsiniz.</li>
+            <li>Kodunuzu yazabilmeniz için öncesinde birçok kütüphane, sınıf vs. gereklilere ihtiyaç duymaz. Aklınızdaki algoritmayı sadece birkaç satır komutla bile hayata geçirebilirsiniz.</li>
+            <li>Nesne tabanlı programla desteği vardır ve büyük projelerde profesyonelce kullanabilirsiniz.</li> 
+            <li>İnternet ve yazılı kaynaklarda çok fazla dökümanı mevcuttur ve ihtiyaç duyduğunuzda yardım edecek birilerini rahatlıkla bulabilirsiniz.</li>
+        </ul>
+      </div>
+      
+    
+    </div>
+
+
+      
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</html>

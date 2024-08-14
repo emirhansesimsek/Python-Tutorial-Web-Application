@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PythonEdu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images\py_logo.png" type="image/jpg" />
+    <style>
+      body {
+        margin: 0;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 20px;
+        box-sizing: border-box;
+        
+      }
+
+      .sidebar {
+        margin: 0;
+        padding: 0;
+        width: 15%;
+        height: 900px;
+        position:absolute;
+        overflow:auto;
+        float: left;
+      }
+      
+      .sidebar a {
+        display: block;
+        color: rgb(73, 73, 73);
+        padding: 16px;
+        text-decoration: none;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 20px;
+        font-weight: 10px;
+        text-align: center;
+      }
+       
+      .sidebar a.active {
+        color: rgb(0, 0, 0);
+      }
+      
+      .sidebar a:hover:not(.active) {
+      color: black;
+      background-color: #dddddd;
+      }
+      ul{
+          color: black;
+      }
+      ul li{
+      color: black;
+      text-align: left;
+      }
+      
+      div.content {
+        margin-left: 200px;
+        padding: 10px 20px;
+        height: 1000px;
+        background-color: rgb(255, 255, 255);
+        float: right;
+        width: 85%;
+        
+      }
+      .myDiv {
+        border: 1px outset rgb(0, 0, 0);
+        background-color: rgb(243, 243, 243);    
+        border-style: dashed;
+        font-style: italic;
+        text-align:left;
+        padding: 5px;
+        margin: 1px;
+  }
+      
+      
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;
+      width: 100%;
+      height: auto;
+    }
+    div.content {margin-left: 0;
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+      width: 100%;
+      height: auto;
+    }
+  }
+      </style>
+</head>
+<body>
+    
+      <!-- header section started -->
+      <div class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            
+       
+              <img src="images/py_logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+      
+              
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: center;">
+                
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                 
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Anasayfa.html" style="margin:10px;" >Anasayfa</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Giris.html" style="margin:10px;" >Eğitim</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="http://127.0.0.1:8000/" style="margin:10px;" target="_blank">Kodlama Editörü</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Egzersiz.html" style="margin:10px;">Egzersizler</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Quizz.html" style="margin:10px;">Deneme Testleri</a>
+                    </li>
+                  </ul>
+          </nav>
+            
+      </div> 
+  <!-- header section ended -->
+
+      
+      <div class="sidebar bg-body-tertiary" style="font-weight: 10px;">
+        
+        <a href="Giris.html">Giriş</a>
+        <a href="Syntax.html">Syntax</a>
+        <a href="Yorumlar.html">Yorumlar</a>
+        <a href="Degiskenler.html">Değişkenler</a>
+        <a href="VeriTipleri.html">Veri Tipleri</a>
+        <a href="Boolean.html">Boolean</a>
+        <a href="Operatorler.html">Operatörler</a>
+        <a href="Listeler.html">Listeler</a>
+        <a href="Demetler.html">Demetler</a>
+        <a href="Kumeler.html">Kümeler</a>
+        <a href="Sozlukler.html">Sözlükler</a>
+        <a href="Kosulifadeleri.html" >Koşul İfadeleri</a>
+        <a href="Donguler.html">Döngüler</a>
+        <a href="Fonksiyonlar.html">Fonksiyonlar</a>
+        <a href="Dosyaislemleri.html" style="background-color: #dddddd;">Dosya İşlemleri</a>
+        <a href="Moduller.html">Modüller</a>
+        
+      </div>
+
+
+    <div class="content"style="height: 898px; overflow: scroll;">
+
+<h4>Dosya İşlemleri</h4>
+<p>Unix işletim sistemlerinde her nesne bir dosyadır. Yani elinizdeki metin belgeleri, medya dosyaları gibi herşey uzantısı olsun veya olmasın bir dosya demektir. Sizde bu dosyalar üzerinde özgürce çalışabilirsiniz.</p>
+
+<h4>Dosya İşlem Kipleri</h4>
+<p>Dosyalar üzerinde okuma, yazma, güncelleme ve silme işlemi yapmadan önce dosyalarımızı hangi modlarda (kiplerde) kullanabileceğimizi görelim.</p>
+
+<ul>
+  <li>r (Mevcut dosyayı okumak için açar, yoksa hata verir)</li>
+  <li>w(Dosya yoksa oluşturur, varsa içeriği silerek sıfır dosya açar)</li>
+  <li>a(Dosya yoksa oluşturur, varsa dosyanın sonunda imleçten başlayarak ekleme yapar)</li>
+  <li>r+(Dosyayı hem okuma, hem yazma(w) modunda açar)</li>
+</ul>
+
+<h4>Dosya Okuma & Açma İşlemleri</h4>
+<p>Bu örneklerde basit bir txt uzantılı metin belgesi ile çalışacağız fakat siz herhangi bir dosya ile de aşağıdaki örnekleri gerçekleştirebilirsiniz. Hatta png uzantılı resimlerle bile çalışabilirsiniz. Çünkü unutmayınız ki herşey bir dosyadır.</p>
+
+<h4>Dosyayı Seçme</h4>
+<p>Aşağıdaki yöntemle dosyamızı seçiyoruz ve işlem kipini (r-read) belirtiyoruz. Ayrıca karakter kodlamasını da fonksiyona dahil edebiliriz.</p>
+
+<div class="myDiv">
+  <pre>
+dosya = open("bilgiler.txt","r",encoding="utf-8")      
+  </pre>       
+  </div>
+  <p>Artık okuyacağımız dosyayı seçmiş bulunuyoruz. Bundan sonra işlemlerimize daha rahat devam edebiliriz.</p>
+
+<h4>Tüm Dosyayı Ekrana Yazdırma / read()</h4>
+<p>Dosyayı seçtikten sonra direkt ekrana basmak isteyebiliriz. Bunun için şu şekilde bir kullanımı tercih edebiliriz:</p>
+
+<div class="myDiv">
+  <pre>
+dosya = open("bilgiler.txt","r",encoding="utf-8")
+oku = dosya.read()
+print(oku)
+  </pre>       
+  </div>
+
+<p>Eğer biz read() fonksiyonuna bir sayı değeri verirsek sadece o sayı değeri kadar alanı okuyacaktır. Hemen görelim.</p>
+
+<div class="myDiv">
+  <pre>
+dosya = open("bilgiler.txt","r",encoding="utf-8")
+oku = dosya.read(10)  #Sadece ilk 10 karakteri okur
+print(oku)
+  </pre>       
+  </div>
+
+  <h4>Her Seferinde Sıradaki Satırı Ekrana Yazdırma / readline()</h4>
+  <p>Şimdi sırada satır satır okuma işlemi yer alıyor. readline() fonksiyonunu her çağırmamızda sadece bir satır okursunuz. Yani ilk çağırdığınızda dosyanın ilk satırını, ikinci çağırdığınızda dosyanın ikinci satırını okursunuz. Bunu döngüye sokarak tüm dosyayı satır satır okuyabilirsiniz.</p>
+
+  <div class="myDiv">
+    <pre>
+dosya = open("bilgiler.txt","r",encoding="utf-8")
+
+print(dosya.readline()) #1.satırı yazdır
+print(dosya.readline()) #2.satırı yazdır
+print(dosya.readline()) #3.satırı yazdır
+    </pre>       
+    </div>
+
+<p>Buradaki tek sorun döngüye soktuğumuzda döngünün kaçıncı satırda biteceğini bilemememiz. Bunu öğrenmenin farklı farklı yöntemleri var ama bize zaman kaybettirmekten başka birşey sağlamaz. Bu yüzden aşağıdaki methodu kullanmanız daha mantıklı olacaktır.</p>
+
+<h4>Dosyayı Satır Satır Döngüyle Ekrana Yazdırma / with</h4>
+
+<p>Bir dosyayı satır satır yazdırabilmemiz için readline() dışında kullanabileceğimiz 2 yöntemimiz var. İki yöntemde aynı kapıya çıkıyor. Bu nedenle aşağıdaki kullanım şekillerinden hoşunuza gideni direkt kullanabilirsiniz.</p>
+
+<div class="myDiv">
+  <pre>
+dosya = open("a.txt","r")
+for satir in dosya:
+    print(satir)
+  </pre>       
+  </div>
+  <br>
+<div class="myDiv">
+    <pre>
+with open("a.txt","r") as dosya:
+   for satir in dosya:
+       print(satir)
+</pre>       
+</div>
+
+<h4>Dosyanın Her Satırını Diziye Eklemek / readlines()</h4>
+<p>readline() fonksiyonu her çağırdığımızda dosyayı satır satır okumamızı sağlıyordu. readlines() ise çağırdığımızda dosyanın tüm satırlarını bir diziye atar. Böylece her satır dizinin bir elemanı olur. Kullanım şeklini ve sonucunu aşağıda görebilirsiniz.</p>
+
+<div class="myDiv">
+  <pre>
+dosya = open("a.txt","r")
+dizi = dosya.readlines()
+print(dizi)
+</pre>       
+</div>
+
+<h4>Dosyaya Yazma İşlemleri</h4>
+<p>Dosyalarımızı artık rahatça okuyabiliyoruz. Peki bu dosyalara istediğimiz verileri nasıl ekleyebiliriz? Bu sorunun cevabı da birazdan göreceğiniz gibi oldukça basit. Sadece dikkat etmeniz gereken tek nokta var ve buda dosyayı hangi kipte yazma moduna alacağınızdan başka birşey değil.  </p>
+<p>Şimdiki konumuz dosyaya veri yazmak olduğu için biz sadece w ve a modlarını kullanacağız.</p>
+
+<h4>w Moduyla Dosyaya Veri Yazmak</h4>
+<p>w kipiyle açtığımız dosyalar yoksa oluşturulur. Varsa dosyanın içeriği önce silinerek temizlenir ve ardından yazmak istediğimiz veriler eklenir. Kısaca eski veriler yok olur. Bu nedenle w modunu dikkatli kullanınız.</p>
+
+<div class="myDiv">
+  <pre>
+dosya = open("bilgiler.txt","w",encoding="utf-8")
+
+dosya.write("Kerteriz ile Python Dosya İşlemleri\n")
+dosya.write("Burası 2. satır oluyor artık")
+dosya.write("3.satıra inmeden 2.satırın sonundan itibaren yazıyor")
+</pre>       
+</div>
+
+<p>Yukarıdaki işlemlerden sonra dosyayı açarsanız karşınızda bu yazdıklarımızı göreceksiniz. Dosyayı kapatana kadar yazmaya da devam edebilirsiniz (dosya kapatma işlemini en sonra göreceğiz)</p>
+
+<h4>a Moduyla Dosyaya Veri Yazmak</h4>
+
+<p>a modu da yine aynı şekilde dosyaya veri yazmamızı sağlar ama tek farkı mevcut dosyanın içeriğini silmez. Bunun yerine dosyanın sonundan yeni verileri eklemeye başlar.</p>
+
+<div class="myDiv">
+  <pre>
+dosya = open("bilgiler.txt","w",encoding="utf-8")
+
+dosya.write("Kerteriz ile Python Dosya İşlemleri\n")
+dosya.write("Burası 2. satır oluyor artık")
+dosya.write("3.satıra inmeden 2.satırın sonundan itibaren yazıyor")
+</pre>       
+</div>
+
+<h4>Dosya Silmek</h4>
+<p>Dosyalarınızı silmek istediğinizde 
+  os
+   modülünü programınıza dahil etmeniz gerekiyor. Ardından 
+  remove()
+   fonksiyonu sile dosyanızı silebilirsiniz.</p>
+
+   <div class="myDiv">
+    <pre>
+import os
+os.remove("dosya.txt")
+  </pre>       
+  </div>
+  <p>Eğer silmek istediğiniz nesne bir klasörse bu sefer 
+    rmdir()
+     fonksiyonunu kullanmalısınız.</p>
+    
+     <div class="myDiv">
+      <pre>
+import os
+os.rmdir("resimler")
+    </pre>       
+    </div>
+
+<h4>Dosyaları Kapatmak</h4>
+<p>Dosyalar üzerindeki işiniz bittiğinde kapatmanız gerekiyor. Bunun için close() adından da anlaşılacağı üzere yardımımıza koşuyor.</p>
+
+<div class="myDiv">
+  <pre>
+dosya = open("bilgiler.txt","a",encoding="utf-8")
+dosya.close()
+</pre>       
+</div>
+
+<p>Çoğu kez dosyalarımızı kapatmayı unuttuğumuz için Pythonun otomatik dosya kapatma özelliğini kullanmak daha iyidir. Bunun için dosyalarınızı açarken şu şekilde açarsanız manuel olarak dosya kapatmaya ihtiyacınız kalmayacaktır.</p>
+
+<div class="myDiv">
+  <pre>
+with open("bilgiler.txt","a",encoding="utf-8") as dosya:
+#kullanıcak fonksiyonlar
+#......
+#......
+</pre>       
+</div>
+
+<h4>Özel Dosya Fonksiyonları</h4>
+<br>
+<h4>Dosyanın Var Olup Olmadığını Kontrol Etmek</h4>
+<p>Üzerinde çalışmak istediğiniz bir dosyanın öncelikle var olup olmadığını kontrol etmek hataların önüne geçebilir. Bu kontrolü 
+  os
+   modülüyle şu şekilde yapabilirsiniz.</p>
+
+<div class="myDiv">
+  <pre>
+import os
+
+if os.path.exists("bilgiler.txt"):
+      print("Dosya var")
+else:
+      print("Dosya mevcut değil!")
+</pre>       
+</div>
+
+<h4> İmlecin Nerede Olduğunu Öğrenme</h4>
+<p>Biraz sonra göreceğimiz imleci dosyada istediğimiz yere koyma işlemlerine gelmeden önce imlecin nerede olduğunu öğrenmekle başlayalım konuya. Aşağıdaki fonksiyon sayesinde imlecin dosyanın kaçıncı byte nda olduğunu öğrenebiliriz.</p>
+
+<div class="myDiv">
+  <pre>
+with open("bilgiler.txt","r",encoding = "utf-8") as dosya:
+    print(dosya.tell())
+</pre>       
+</div>
+<p>Örneğin dosyada bir read() işlemi yaptıysanız imleç dosyanın sonuna gider ve yukarıdaki fonksiyon size dosyanın byte miktarını gösterir. Hiçbir işlem yapmadıysanız da dosyanın başında olduğunuzu söyler, yani 0 gösterir.</p>
+
+<h4>Dosyanın Belirli Bir Byte'ına İmleci Koymak</h4>
+<p>Eğer imlecimizi dosyada istediğimiz bir byte'a koymak istiyorsak bunu şu şekilde yapabiliriz.</p>
+
+<div class="myDiv">
+  <pre>
+with open("bilgiler.txt","r",encoding = "utf-8") as dosya:
+    print(dosya.seek(20))  #20. byte'a imleci koyar
+</pre>       
+</div>
+
+<h4>Dosyanın Sonuna Veri Eklemek</h4>
+<p>Bu işlem için dosyayı a kipinde açıp write ile verilerinizi eklemeniz yeterli olacaktır</p>
+
+<h4>Dosyanın Başına Veri Eklemek</h4>
+<p>Bu işlemi yapabilmenin en kolay yolu dosyanın tamamını okuyup başına istediğimiz veriyi ekleyerek yeni bir string olarak kaydetmek, ardından imleci başa getirerek yeni veriyi yazmak olacaktır. Hemen görelim:</p>
+
+<div class="myDiv">
+  <pre>
+with open("bilgiler.txt","r+",encoding = "utf-8") as dosya:
+    icerik = dosya.read()
+        yeniicerik = "Bu metini ilk satıra ekliyorum\n" + icerik
+        dosya.seek(0)
+        dosya.write(yeniicerik)
+</pre>       
+</div>
+
+<p>İşte bu kadar basit. Sadece farklı olarak dosyayı r+ modunda açtık çünkü dosyayı hem okuyor, hem yazıyoruz.</p>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    
+
+
+
+
+
+      
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</html>

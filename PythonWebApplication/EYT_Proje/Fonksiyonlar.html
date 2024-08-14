@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PythonEdu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images\py_logo.png" type="image/jpg" />
+    <style>
+      body {
+        margin: 0;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 20px;
+        box-sizing: border-box;
+        
+      }
+
+      .sidebar {
+        margin: 0;
+        padding: 0;
+        width: 15%;
+        height: 900px;
+        position:absolute;
+        overflow:auto;
+        float: left;
+      }
+      
+      .sidebar a {
+        display: block;
+        color: rgb(73, 73, 73);
+        padding: 16px;
+        text-decoration: none;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 20px;
+        font-weight: 10px;
+        text-align: center;
+      }
+       
+      .sidebar a.active {
+        color: rgb(0, 0, 0);
+      }
+      
+      .sidebar a:hover:not(.active) {
+      color: black;
+      background-color: #dddddd;
+      }
+      ul{
+          color: black;
+      }
+      ul li{
+      color: black;
+      text-align: left;
+      }
+      
+      div.content {
+        margin-left: 200px;
+        padding: 10px 20px;
+        height: 1000px;
+        background-color: rgb(255, 255, 255);
+        float: right;
+        width: 85%;
+        
+      }
+      .myDiv {
+        border: 1px outset rgb(0, 0, 0);
+        background-color: rgb(243, 243, 243);    
+        border-style: dashed;
+        font-style: italic;
+        text-align:left;
+        padding: 5px;
+        margin: 1px;
+  }
+      
+      
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;
+      width: 100%;
+      height: auto;
+    }
+    div.content {margin-left: 0;
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+      width: 100%;
+      height: auto;
+    }
+  }
+      </style>
+</head>
+<body>
+    
+      <!-- header section started -->
+      <div class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            
+       
+              <img src="images/py_logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+      
+              
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                 
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Anasayfa.html" style="margin:10px;" >Anasayfa</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Giris.html" style="margin:10px;" >Eğitim</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="http://127.0.0.1:8000/" style="margin:10px;" target="_blank">Kodlama Editörü</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Egzersiz.html" style="margin:10px;">Egzersizler</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Quizz.html" style="margin:10px;">Deneme Testleri</a>
+                    </li>
+                  </ul>
+          </nav>
+            
+      </div> 
+  <!-- header section ended -->
+
+      
+      <div class="sidebar bg-body-tertiary" style="font-weight: 10px;">
+        
+        <a href="Giris.html">Giriş</a>
+        <a href="Syntax.html">Syntax</a>
+        <a href="Yorumlar.html">Yorumlar</a>
+        <a href="Degiskenler.html">Değişkenler</a>
+        <a href="VeriTipleri.html">Veri Tipleri</a>
+        <a href="Boolean.html">Boolean</a>
+        <a href="Operatorler.html">Operatörler</a>
+        <a href="Listeler.html">Listeler</a>
+        <a href="Demetler.html">Demetler</a>
+        <a href="Kumeler.html">Kümeler</a>
+        <a href="Sozlukler.html">Sözlükler</a>
+        <a href="Kosulifadeleri.html">Koşul İfadeleri</a>
+        <a href="Donguler.html">Döngüler</a>
+        <a href="Fonksiyonlar.html" style="background-color: #dddddd;">Fonksiyonlar</a>
+        <a href="Dosyaislemleri.html">Dosya İşlemleri</a>
+        <a href="Moduller.html">Modüller</a>
+        
+      </div>
+
+
+    <div class="content"style="height: 898px; overflow: scroll;">
+<h4>Fonksiyonlar</h4>
+
+<p>Fonksiyonlar, sadece çağrıldıklarında çalışan kod bloklarıdır. Bir fonksiyon ile tanımladığınız belirli komutlarınız, yeri geldiğinde çağrılarak, parametreler gönderilerek kullanılır ve istenilirse size bir değer döndürür.</p>
+
+<h4>Fonksiyon Oluşturmak ve Çağırmak</h4>
+<p>Python programlama dilinde bir program oluşturabilmek için def terimini kullanırız ve ardından fonksiyon ismini yazarız.</p>
+
+<div class="myDiv">
+  <pre>
+def ornekFonksiyon(): 
+    print("Merhaba Dünya!")      
+  </pre>       
+  </div>
+<p>Oluşturduğumuz bir fonksiyonu programımızın istediğimiz yerinde çağırabiliriz. Bunun için sadece fonksiyon ismini belirtmemiz yeterlidir.</p>
+<div class="myDiv">
+  <pre>
+ornekFonksiyon()      
+  </pre>       
+  </div>
+
+<h4>Fonksiyon Parametreleri</h4>
+<p>Oluşturduğumuz fonksiyona parametre göndererek işleme sokmak istiyorsak, fonksiyonumuzu oluştururken parantezlerin arasında bu parametreleri belirtmeli ve fonksiyonu çağırırken ilgili parametre değerleri ile çağırmalıyız.</p>
+
+<div class="myDiv">
+  <pre>
+def selamVer(isim,yas): 
+    print("Merhaba, {} {} yaşındadır".format(isim,yas))
+
+selamVer("Yunus",24)
+
+# Merhaba, Yunus 24 yaşındadır
+  </pre>       
+  </div>
+<p>Örnekte gördüğünüz gibi fonksiyona iki adet parametre alacağını söyledik ve fonksiyonu çağırırken bu iki parametrenin de değerini gönderdik. Fonksiyon da gelen bu parametreleri ilgili yerlere otomatik olarak yerleştirdi. Bir örnek daha yapalım.</p>
+<div class="myDiv">
+  <pre>
+def usAlma(x): 
+    print(x**2)
+
+usAlma(7) # 49
+  </pre>       
+  </div>
+  <br>
+  <div class="myDiv">
+    <pre>
+def usAlma(x): 
+      print(x**2)
+  
+usAlma(7) # 49
+    </pre>       
+    </div>  
+    <br>
+
+    <div class="myDiv">
+      <pre>
+def toplama(x,y): 
+      print(x+y)
+        
+toplama(25) # !! HATA VERİR (eksik parametre değeri) !!
+      </pre>       
+      </div>  
+
+<h4>Öntanımlı Parametre İle Fonksiyon Oluşturmak</h4>
+<p>Fonksiyonlarımızı oluştururken alacağı parametrelerin değerlerini öntanımlı olarak belirleyebiliriz. Bu sayede kullanıcı eğer parametrenin değerini göndermezse biz bu parametreye bir öntanımlı değer atayabiliriz.</p>
+
+<div class="myDiv">
+  <pre>
+def dogumYeri(sehir="Bilinmiyor"):
+    print("Doğum yeri: " + sehir)
+
+dogumYeri("Ankara")      # Doğum yeri: Ankara
+dogumYeri("İstanbul")    # Doğum yeri: İstanbul
+dogumYeri()              # Doğum yeri: Bilinmiyor
+  </pre>       
+  </div> 
+
+<h4>Belirsiz Sayıda Fonksiyon Parametresi</h4>
+<p>Yukarıdaki örneklerde gönderilecek parametre adedini belirledik ve fonksiyon çağırırken belirlenen parametre adedince değer gönderdik. Peki yazdığımız fonksiyon onlarca,yüzlerce parametreye ihtiyaç duyduğunda tüm parametreleri tek tek fonksiyon oluştururken belirtecek miyiz? Tabiki de hayır Python programlama dilinde eğer belirsiz sayıda değişken ile fonksiyon oluşturacaksanız * işaretiyle parametre adı belirlemelisiniz. Bu sayede tanımladığınız parametre bir demete dönüşecek ve gönderdiğiniz tüm değerler bu demete eleman olarak eklenecektir.</p>
+
+<div class="myDiv">
+  <pre>
+def meyveler(*meyve):
+    print(meyve[0])
+    print(meyve[1])
+
+meyveler("elma","muz","çilek","kavun")
+
+# elma
+# muz
+  </pre>       
+  </div> 
+
+  <h4>Fonksiyon Dönüş Değeri Belirleme</h4>
+<p>Fonksiyonlarımızın çağrıldıkları zaman çalıştıklarını artık öğrendik. Ayrıca bu fonksiyonlar ile ekrana çıktı verebildiğimizi de yukarıdaki örneklerde gördünüz. Şimdi ise oluşturduğumuz fonksiyonlara return ile dönüş değeri döndürmesini söyleyeceğiz ve fonksiyonlarımızı çalışması için çağırdığımızda bize bir değer döndürecek.</p>
+
+<div class="myDiv">
+  <pre>
+def carpma(x,y): 
+    return x*y
+    
+sonuc = carpma(7,5)
+
+print(sonuc) # 35
+  </pre>       
+  </div> 
+  <p>Bu basit örneğimizde fonksiyonumuzun çarpma işlemini yaparak bize return ile sonucu döndürmesini istedik. Böylece fonksiyon sonucunu bir değere atayarak veya direkt print ile ekrana yazdırarak işlem sonucumuzu öğrenmiş olduk.</p>
+
+  <div class="myDiv">
+    <pre>
+def selamVer(): 
+      return "Merhaba!"
+      
+  print(selamVer()) # Merhaba!
+    </pre>       
+    </div> 
+
+<h4>Boş Fonksiyon Oluşturmak</h4>
+<p>Herhangi bir sebep yüzünden boş fonksiyon oluşturmak istediğinizde hata almamak için pass terimini kullanabilirsiniz.</p>
+
+<div class="myDiv">
+  <pre>
+def dahaSonra(): 
+    pass
+  </pre>       
+  </div> 
+
+<h4>Yinelemeli Fonksiyonlar</h4>
+<p>Yinelemeli (recursive) fonksiyonlar kendi kendini çağıran fonksiyonlardır. Bir fonksiyonu yinelemeli hale getirmek için herhangi bir terim kullanmamıza gerek yoktur. Fonksiyonu oluştururken içeride yine aynı fonksiyonu çağırarak yinelemeli hale getirebilirsiniz. Yinelemeli fonksiyonlar birçok alanda kullanılır ve işlem kolaylığı sağlar. Daha çok matematiksel hesaplamalarda tercih edilmesine rağmen kendi işlevlerinizi de yinelemeli olarak yerine getirebilirsiniz.</p>
+
+<div class="myDiv">
+  <pre>
+def faktoriyel(x):
+
+    if x == 1:
+        return 1
+    else:
+        return x * faktoriyel(x-1)
+
+sonuc = faktoriyel(5)
+
+print(sonuc)    # 120
+  </pre>       
+  </div> 
+<p>Örneğimizde basit bir faktoriyel hesaplama fonksiyonunu yinelemeli bir fonksiyon ile yazdık. Burada 5 sayısının faktoriyelini hesaplarken (5*4*3*2*1) sonucunu alabilmek için fonksiyonumuzun içinde her seferinde sayının bir küçüğünü tekrardan fonksiyon ile çağırarak çarptık ve en son 1 sayısına geldiğimizde fonksiyonumuzu sonlandırdık. Sizde kendinize yinelemeli fonksiyonlarla yazacağınız örnekler bularak programlama da pratiklik kazanabilirsiniz.</p>
+
+
+
+
+
+
+    </div>
+
+    
+
+
+
+
+
+      
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PythonEdu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images\py_logo.png" type="image/jpg" />
+    <style>
+      body {
+        margin: 0;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 20px;
+        box-sizing: border-box;
+        
+      }
+
+      .sidebar {
+        margin: 0;
+        padding: 0;
+        width: 15%;
+        height: 900px;
+        position:absolute;
+        overflow:auto;
+        float: left;
+      }
+      
+      .sidebar a {
+        display: block;
+        color: rgb(73, 73, 73);
+        padding: 16px;
+        text-decoration: none;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 20px;
+        font-weight: 10px;
+        text-align: center;
+      }
+       
+      .sidebar a.active {
+        color: rgb(0, 0, 0);
+      }
+      
+      .sidebar a:hover:not(.active) {
+      color: black;
+      background-color: #dddddd;
+      }
+      ul{
+          color: black;
+      }
+      ul li{
+      color: black;
+      text-align: left;
+      }
+      
+      div.content {
+        margin-left: 200px;
+        padding: 10px 20px;
+        height: 1000px;
+        background-color: rgb(255, 255, 255);
+        float: right;
+        width: 85%;
+        
+      }
+      .myDiv {
+        border: 1px outset rgb(0, 0, 0);
+        background-color: rgb(243, 243, 243);    
+        border-style: dashed;
+        font-style: italic;
+        text-align:left;
+        padding: 5px;
+        margin: 1px;
+  }
+      
+      
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;
+      width: 100%;
+      height: auto;
+    }
+    div.content {margin-left: 0;
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+      width: 100%;
+      height: auto;
+    }
+  }
+      </style>
+</head>
+<body>
+    
+      <!-- header section started -->
+      <div class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            
+       
+              <img src="images/py_logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+      
+              
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: center;">
+                
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                 
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Anasayfa.html" style="margin:10px;" >Anasayfa</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Giris.html" style="margin:10px;" >Eğitim</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="http://127.0.0.1:8000/" style="margin:10px;" target="_blank">Kodlama Editörü</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Egzersiz.html" style="margin:10px;">Egzersizler</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Quizz.html" style="margin:10px;">Deneme Testleri</a>
+                    </li>
+                  </ul>
+          </nav>
+            
+      </div> 
+  <!-- header section ended -->
+
+      
+      <div class="sidebar bg-body-tertiary" style="font-weight: 10px;">
+        
+        <a href="Giris.html">Giriş</a>
+        <a href="Syntax.html">Syntax</a>
+        <a href="Yorumlar.html">Yorumlar</a>
+        <a href="Degiskenler.html">Değişkenler</a>
+        <a href="VeriTipleri.html" style="background-color: #dddddd;">Veri Tipleri</a>
+        <a href="Boolean.html">Boolean</a>
+        <a href="Operatorler.html">Operatörler</a>
+        <a href="Listeler.html">Listeler</a>
+        <a href="Demetler.html">Demetler</a>
+        <a href="Kumeler.html">Kümeler</a>
+        <a href="Sozlukler.html">Sözlükler</a>
+        <a href="Kosulifadeleri.html">Koşul İfadeleri</a>
+        <a href="Donguler.html">Döngüler</a>
+        <a href="Fonksiyonlar.html">Fonksiyonlar</a>
+        <a href="Dosyaislemleri.html">Dosya İşlemleri</a>
+        <a href="Moduller.html">Modüller</a>
+        
+      </div>
+
+
+    <div class="content"style="height: 898px; overflow: scroll;">
+
+      <h4>Veri Tipi Çeşitleri</h4>
+      <p>Programlamada kullanacağımız verinin tipi çok önemlidir. Çünkü örnek olarak bir muhasebe programında ondalık sayılar kullanmanız gerekirken bunun yerine sadece tam sayılar kullanırsanız büyük sorunlar yaşarsınız. Bunun için kullanabileceğiniz veri tiplerini en başta öğrenmeniz çok önemlidir. Kullanabileceğiniz veri tipleri şunlardır;</p>
+      <ul>
+        <li>Metin tipleri: str</li>
+        <li>Sayısal Tipler: int,float,complex</li>
+        <li>Dizi Tipler: list,tuple,range</li>
+        <li>Adresleme Tipleri: dict</li>
+        <li>Küme Tipleri: set,frozenset</li>
+        <li>Mantıksal Tipler:bool</li>
+        <li>Binary Tipler: bytes,bytrarray,memoryview</li>
+      </ul>
+
+    <h4>Veri Tipleri Arası Dönüşüm</h4>
+    <p>Elinizde mevcut olan bir değişkenin tipini değiştirmek istediğinizde, örneğin int  tipindeki bir sayıyı float  tipine çevirmek için yukarıda yer alan örnekleri kullanabilirsiniz. Artı olarak şu örneği inceleyebilirsiniz;</p>
+    <div class="myDiv">
+        <p>a = 5</p>
+        <p>print(type(a))  </p>
+        <p>a = float(a)</p>
+        <p>print(a)</p>
+        <p>print(type(a))</p>
+    </div>
+    
+    <p>Aynı şekilde int  tipindeki bir sayıyı string(metin) türündeki str  tipine çevirmek aşağıdaki örneği inceleyebilirsiniz;</p>
+    
+    <div class="myDiv">
+        <p>a = 5</p>
+        <p>print(type(a))  </p>
+        <p>a = str(a)</p>
+        <p>print(type(a))</p>
+    </div>
+  </div>
+
+    
+
+
+
+
+
+      
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</html>

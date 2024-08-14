@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PythonEdu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images\py_logo.png" type="image/jpg" />
+    <style>
+        body {
+          margin: 0;
+          font-family:'Times New Roman', Times, serif;
+          font-size: 20px;
+          
+        }
+
+        .sidebar {
+          margin: 0;
+          padding: 0;
+          width: 15%;
+          height: 891px;
+          position:absolute;
+          overflow:auto;
+          float: left;
+        }
+        
+        .sidebar a {
+          display: block;
+          color: rgb(73, 73, 73);
+          padding: 16px;
+          text-decoration: none;
+          font-family:'Times New Roman', Times, serif;
+          font-size: 20px;
+          font-weight: 10px;
+          text-align: center;
+        }
+         
+        .sidebar a.active {
+          color: rgb(0, 0, 0);
+        }
+        
+        .sidebar a:hover:not(.active) {
+        color: black;
+        background-color: #53b7ff;
+        }
+        ul{
+            color: black;
+        }
+        ul li{
+        color: black;
+        text-align: left;
+        }
+        
+        div.content {
+          margin-left: 200px;
+          padding: 10px 20px;
+          height: 1000px;
+          background-color: rgb(255, 255, 255);
+          float: right;
+          width: 85%;
+          
+        }
+        .myDiv {
+          border: 1px outset rgb(0, 0, 0);
+          background-color: rgb(243, 243, 243);    
+          border-style: dashed;
+          font-style: italic;
+          text-align:left;
+          padding: 5px;
+          margin: 1px;
+    }
+        
+        
+        @media screen and (max-width: 700px) {
+          .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative;
+          }
+          .sidebar a {float: left;}
+          div.content {margin-left: 0;}
+        }
+        
+        @media screen and (max-width: 400px) {
+          .sidebar a {
+            text-align: center;
+            float: none;
+          }
+        }
+        </style>
+</head>
+<body>
+    
+      <!-- header section started -->
+      <div class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-da justify-content-between" style="background-color: #53b7ff;">
+            
+       
+              <img src="images/py_logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+      
+                <br>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: center;">
+                
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                 
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#" >Anasayfa</a>
+
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#" >Eğitim</a>
+
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#" >Deneme Testleri</a>
+
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#" >Egzersizler</a>
+                  
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#" >Deneme Testleri</a>
+
+                     
+                  </ul>
+          </nav>
+            
+      </div> 
+  <!-- header section ended -->
+
+      
+      <div class="sidebar bg-body-tertiary" style="font-weight: 10px;">
+        
+        <a href="#news">Giriş</a>
+        <a href="#news">Syntax</a>
+        <a href="#news">Yorumlar</a>
+        <a href="#news">Değişkenler</a>
+        <a href="#news">Veri Tipleri</a>
+        <a href="#about">Boolean</a>
+        <a href="#about">Operatörler</a>
+        <a href="#contact">Listeler</a>
+        <a href="#about">Demetler</a>
+        <a href="#about">Kümeler</a>
+        <a href="#about">Sözlükler</a>
+        <a href="#contact">Koşul İfadeleri</a>
+        <a href="#about">Döngüler</a>
+        <a href="#news">Fonksiyonlar</a>
+        <a href="#about">Dosya İşlemleri</a>
+        <a href="#about">Modüller</a>
+        
+      </div>
+
+
+    <div class="content"style="height: 898px; overflow: scroll;">
+
+      <div class="myDiv">
+        <p>print(5 > 4)        # True</p>
+        <p>print(5 == 4)       # False</p>
+        <p>print(5 == 4)       # False</p>
+      </div>
+
+      <div class="myDiv">
+        <pre>
+            
+        </pre>       
+        </div>
+        
+
+
+    </div>
+
+    
+
+
+
+
+
+      
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</html>

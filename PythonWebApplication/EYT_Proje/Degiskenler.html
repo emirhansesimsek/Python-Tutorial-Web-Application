@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PythonEdu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images\py_logo.png" type="image/jpg" />
+    <style>
+        body {
+          margin: 0;
+          font-family:'Times New Roman', Times, serif;
+          font-size: 20px;
+          box-sizing: border-box;
+          
+        }
+
+        .sidebar {
+          margin: 0;
+          padding: 0;
+          width: 15%;
+          height: 900px;
+          position:absolute;
+          overflow:auto;
+          float: left;
+        }
+        
+        .sidebar a {
+          display: block;
+          color: rgb(73, 73, 73);
+          padding: 16px;
+          text-decoration: none;
+          font-family:'Times New Roman', Times, serif;
+          font-size: 20px;
+          font-weight: 10px;
+          text-align: center;
+        }
+         
+        .sidebar a.active {
+          color: rgb(0, 0, 0);
+        }
+        
+        .sidebar a:hover:not(.active) {
+        color: black;
+        background-color: #dddddd;
+        }
+        ul{
+            color: black;
+        }
+        ul li{
+        color: black;
+        text-align: left;
+        }
+        
+        div.content {
+          margin-left: 200px;
+          padding: 10px 20px;
+          height: 1000px;
+          background-color: rgb(255, 255, 255);
+          float: right;
+          width: 85%;
+          
+        }
+        .myDiv {
+          border: 1px outset rgb(0, 0, 0);
+          background-color: rgb(243, 243, 243);    
+          border-style: dashed;
+          font-style: italic;
+          text-align:left;
+          padding: 5px;
+          margin: 1px;
+    }
+        
+        
+    @media screen and (max-width: 700px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .sidebar a {float: left;
+        width: 100%;
+        height: auto;
+      }
+      div.content {margin-left: 0;
+        width: 100%;
+        height: auto;
+      }
+    }
+    
+    @media screen and (max-width: 400px) {
+      .sidebar a {
+        text-align: center;
+        float: none;
+        width: 100%;
+        height: auto;
+      }
+    }
+        </style>
+</head>
+<body>
+    
+      <!-- header section started -->
+      <div class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            
+       
+              <img src="images/py_logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+      
+              
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: center;">
+                
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                 
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Anasayfa.html" style="margin:10px;" >Anasayfa</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Giris.html" style="margin:10px;" >Eğitim</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="http://127.0.0.1:8000/" style="margin:10px;" target="_blank" >Kodlama Editörü</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Egzersiz.html" style="margin:10px;">Egzersizler</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Quizz.html" style="margin:10px;">Deneme Testleri</a>
+                    </li>
+                  </ul>
+          </nav>
+            
+      </div> 
+  <!-- header section ended -->
+
+      
+      <div class="sidebar bg-body-tertiary" style="font-weight: 10px;">
+        
+        <a href="Giris.html">Giriş</a>
+        <a href="Syntax.html">Syntax</a>
+        <a href="Yorumlar.html">Yorumlar</a>
+        <a href="Degiskenler.html" style="background-color: #dddddd;">Değişkenler</a>
+        <a href="VeriTipleri.html">Veri Tipleri</a>
+        <a href="Boolean.html">Boolean</a>
+        <a href="Operatorler.html">Operatörler</a>
+        <a href="Listeler.html">Listeler</a>
+        <a href="Demetler.html">Demetler</a>
+        <a href="Kumeler.html">Kümeler</a>
+        <a href="Sozlukler.html">Sözlükler</a>
+        <a href="Kosulifadeleri.html">Koşul İfadeleri</a>
+        <a href="Donguler.html">Döngüler</a>
+        <a href="Fonksiyonlar.html">Fonksiyonlar</a>
+        <a href="Dosyaislemleri.html">Dosya İşlemleri</a>
+        <a href="Moduller.html">Modüller</a>
+        
+      </div>
+
+
+    <div class="content"style="height: 898px; overflow:auto">
+
+      <h4>Değişkenler</h4>
+      <p>Programlama dillerinde elinizde ki sayı, isim, liste gibi ögeleri tutarken değişkenlere ihtiyaç duyarsınız ve değişkenler (variables) programlamada en temel ögedir. Özetle değişkenler elinizde ki verileri depolamanızı mümkün kılar. Birçok programlama dilinde değişkenleri oluştururken verinin tipini (sayı mı, karakter mi, dizi mi gibi)  değişken isimlerinin önüne getirdiğiniz belirteçlerle tanımlarsınız. Fakat Python ile oluşturduğunuz değişkenlerde hiçbir ön eke gerek duymazsınız.</p>
+      <div class="myDiv">
+        <p>a = 5     #sayı tipinde değişken </p>
+        <p>a = "5"   #karakter grubu (string) tipinde değişken</p>
+      </div>
+      <p>Örnekte gördüğünüz üzere herhangi bir int, float string, char gibi ön eke gerek duymadan değişkenlerimizi oluşturduk ve Python otomatik olarak veri tiplerini algıladı. Ayrıca string veya char değişken türlerini oluştururken (çift tırnak) veya (tek tırnak) kullanabilirsiniz.</p>
+      <div class="myDiv">
+        <p>isim = "Kerteriz Blog</p>
+        <p>isim = 'Kerteriz Blog'</p>
+      </div>
+
+      <h4>Değişken İsimlerini Seçerken Dikkat Edilmesi Gerekenler</h4>
+      <p>Öncelikle değişken isimlerinizi oluştururken tuttuğunuz değerleri çağrıştıracak ve programlamanızın ilerleyen süreçlerinde ilgili değişkeni rahat hatırlayabileceğiniz değişken isimleri oluşturmaya dikkat ediniz. </p>
+      <h6>Örnekler:</h6>
+      <ul>
+      <li>isim</li>
+      <li>_sayi</li>
+      <li>Top10</li>
+      <li>sehir_</li>
+      </ul>
+
+    <h4>Çoklu Değişken Değerleri Tanımlama</h4>
+    <p>İlerleyen süreçlerde pratiklik kazandığınızda tek satırda birçok değişken oluşturma veya farklı değişkenlere aynı değeri atama ihtiyacı duyabilirsiniz. Bunun için aşağıdaki kullanımları baz alabilirsiniz.</p>
+
+    <div class="myDiv">
+        <p>x, y, z = "Elma", "Armut", "Çilek"</p>
+        <p>print(x) #Elma</p>
+        <p>print(y) #Armut</p>
+        <p>print(z) #Çilek</p>
+    </div>
+    <br>
+    <div class="myDiv">
+        <p>x=y=z = "Karpuz"</p>
+        <p>print(x) #Karpuz</p>
+        <p>print(y) #Karpuz</p>
+        <p>print(z) #Karpuz</p>
+    </div>
+
+    <h4>Local ve Global Değişkenler</h4>
+    <p>Bir değişkeni nerede tanımladığınız, programlamanın ilerleyen süreçlerinde bu değişkeni kullanıp kullanamayacağınızı belirler. Nasıl yani? Örneğin bir değişkeni fonksiyon içinde tanımladığınızda o değişkeni sadece ilgili fonksiyon içinde kullanabilirsiniz. Fakat fonksiyonun dışında tanımladığınız bir değişkeni herhangi bir fonksiyon içinde rahatlıkla kullanabilirsiniz. Hemen örnekleri görelim:</p>
+    <div class="myDiv">
+        <p>x="Lale"</p>
+        <p>def ornekFonksiyon()</p>
+        <p>y="Pırasa"</p>
+        <p>print(x)  # Lale</p>
+        <p>print(y)  # Pırasa</p>
+        <p>ornekFonksiyon()</p>
+        <p>print(x)  # Lale</p>
+        <p>print(y)  # !!Hata verir</p>
+    </div>
+
+    <p>Bu örnekte değişkeni fonksiyonun dışında tanımlandığı için global  bir değişkendir ve istediğiniz her yerde kullanabilirsiniz. değişkeni ise fonksiyonun içinde tanımlandığı için local  bir değişkendir ve sadece aynı fonksiyon içinde kullanılabilir.</p>
+
+    <h4>Değişkenleri Ekrana Yazdırma</h4>
+    <p>Artık değişkenleri nasıl oluşturacağımızı öğrendikten sonra bu değişkenleri ekrana nasıl yazdırırız örnekler üzerinde görelim.</p>
+
+    <div class="myDiv">
+        <p>sehir = "Ankara"</p>
+        <p>a = 5</p>
+        <p>b = "5"</p>
+        <p>c = 3</p>
+        <p>print("Şehir: " + sehir)    # Şehir: Ankara</p>
+    </div>
+
+    <h4>Kullanıcıdan Değişkene Atanacak Değer Alma</h4>
+    <p>Her zaman değişkenlere değerleri siz atamazsınız. Bazı durumlarda da kullanıcılara isimlerini, yaşlarını vs. sorarak ekrana yazdıkları değerleri siz bir değere atarsınız. Bunun için kullanıcılardan nasıl bir değer alarak değişkene atayabileceğimizin örneğini görelim.</p>
+
+    <div class="myDiv">
+        <p>yas = input("Kaç yaşındasınız: ") </p>
+        <p>print(yas)</p>
+    </div>
+        
+    </div>
+
+
+
+
+
+      
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</html>
