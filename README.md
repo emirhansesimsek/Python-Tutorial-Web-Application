@@ -11,20 +11,9 @@ This project aims to provide an interactive and engaging platform for those who 
 + Other: Python, Django
 # ScreenShots
  <div>
-  <img src="ARS Motors/Preview/ss12.png"/>
-  <img src="ARS Motors/Preview/ss13.png"/>
-  <img src="ARS Motors/Preview/ss14.png"/>
-  <img src="ARS Motors/Preview/ss15.png"/>
-  <img src="ARS Motors/Preview/ss17.png"/>
-  <img src="ARS Motors/Preview/ss8.png"/>
-  <img src="ARS Motors/Preview/ss7.png"/>
-  <img src="ARS Motors/Preview/ss6.png"/>
-  <img src="ARS Motors/Preview/ss3.png"/>
-   <img src="ARS Motors/Preview/ss18.png"/>
-  <img src="ARS Motors/Preview/ss2.png"/>
-  <img src="ARS Motors/Preview/ss1.png"/>
-  <img src="ARS Motors/Preview/ss19.png"/>
-   <img src="ARS Motors/Preview/ss9.png"/>
-  <img src="ARS Motors/Preview/ss10.png"/>
-   <img src="ARS Motors/Preview/ss11.png"/>
+  <img src="Interface/111111.png"/>
+  <img src="Interface/2222222.png"/>
+  <img src="Interface/333333.png"/>
+  <img src="Interface/44444444.png"/>
+  <img src="Interface/555555.png"/>
 </div>
